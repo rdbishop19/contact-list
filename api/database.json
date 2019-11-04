@@ -2,21 +2,21 @@
   "contacts": [
     {
       "name": "Bilbo Baggins",
-      "phoneNumber": "111-111-1101",
       "address": "The Shire",
+      "phoneNumber": "111-111-1108",
       "id": 1
-    },
-    {
-      "name": "Mickey Mouse",
-      "address": "50 Disney Lane",
-      "phoneNumber": "123-456-7890",
-      "id": 3
     },
     {
       "name": "Gandalf the Grey",
       "address": "Minas Tirith",
       "phoneNumber": "n/a",
       "id": 6
+    },
+    {
+      "name": "Ryan Bishop",
+      "address": "301 Plus Park Blvd.",
+      "phoneNumber": "867-5309",
+      "id": 7
     }
   ]
 }

@@ -10,6 +10,7 @@ export default {
     createFormHtml(){
         return /* html5 */`
         <form action="" id="contact-form">
+            <input id="hiddenEdit" value="" type="hidden">
             <label for="fullName"><strong>Name: </strong>
             <input id="fullName" type="text" required /></label>
             <label for="address"><strong>Address: </strong>

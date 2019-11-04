@@ -24,5 +24,15 @@ export default {
             //TODO: add meta-data object
             method: "DELETE",
         })
+    },
+    updateContact(id, contact){
+        return fetch(`http://localhost:8088/contacts/${id}`, {
+            //TODO: add meta-data object
+            method: "PUT",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(contact)
+        })
     }
 }
