@@ -1,5 +1,11 @@
-const message = "Your Webpack application is set up and ready to go. Please start writing code."
+import form from "./contactForm.js"
+import list from "./contactList.js"
 
-document.querySelector("#container").innerHTML = `<h1>${message}</h1>`
+const message = "Welcome to the ZAWESOME contact form app. It contacts. It forms. It apps!"
+const container = document.querySelector("#formContainer")
+container.innerHTML = `<h1>${message}</h1>`
 
-console.log(message)
+//populate contact form to DOM
+form.renderContactForm()
+//populate contact list to DOM
+list.renderContactList()
