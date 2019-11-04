@@ -18,5 +18,11 @@ export default {
             },
             body: JSON.stringify(contact)
         })
+    },
+    deleteContact(id){
+        return fetch(`http://localhost:8088/contacts/${id}`, {
+            //TODO: add meta-data object
+            method: "DELETE",
+        })
     }
 }

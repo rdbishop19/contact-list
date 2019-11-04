@@ -1,7 +1,4 @@
-/* component that listens for when the submit button is pressed.
-When it is triggered, a new contact should be POSTed to the API. */
-import collection from "./contactCollection.js"
-import contacts from "./contactList.js";
+/* sets up the entry form to render to DOM */
 
 export default {
     renderContactForm(){
@@ -9,25 +6,6 @@ export default {
         const formContainer = document.querySelector("#formContainer")
         //build form and place in container
         formContainer.innerHTML += this.createFormHtml()
-    },
-    handleSaveEvent(){
-        event.preventDefault()
-        // console.log("Saves the new contact's info to the database")
-
-        //get form entry fields and pass to saveNewContact
-        const name = document.getElementById("fullName").value
-        const address = document.getElementById("address").value
-        const phoneNumber = document.getElementById("phoneNumber").value
-        console.log({name, address, phoneNumber})
-
-        // const newContact = {name: "Bilbo Baggins", phoneNumber: "111-111-1101", address: "The Shire"}
-        // console.log(JSON.stringify(newContact));
-        collection.saveNewContact({name, address, phoneNumber})
-            .then(collection.getAllContacts)
-            .then(contacts.renderContactList)
-    },
-    attachSaveEvent(){
-        document.getElementById("save-entry").addEventListener("click", this.handleSaveEvent)
     },
     createFormHtml(){
         return /* html5 */`
