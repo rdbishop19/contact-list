@@ -7,28 +7,16 @@
       "id": 1
     },
     {
-      "name": "Ryan Bishop",
-      "address": "301 Plus Park Blvd.",
-      "phoneNumber": "10-10-220",
-      "id": 2
-    },
-    {
       "name": "Mickey Mouse",
       "address": "50 Disney Lane",
       "phoneNumber": "123-456-7890",
       "id": 3
     },
     {
-      "name": "Donald Duck",
-      "address": "20 Disneyworld Drive",
-      "phoneNumber": "333-333-3333",
-      "id": 4
-    },
-    {
-      "name": "Goofy",
-      "address": "20 Pluto Pl.",
-      "phoneNumber": "233-322-2333",
-      "id": 5
+      "name": "Gandalf the Grey",
+      "address": "Minas Tirith",
+      "phoneNumber": "n/a",
+      "id": 6
     }
   ]
 }
