@@ -13,7 +13,8 @@ export default {
 				contactsContainer.innerHTML += displayNew(entry);
 			});
 			events.attachSaveEvent();
-			events.attachDeleteEvents();
+            events.attachDeleteEvents();
+            events.attachEditEvents();
 		});
 	}
 };
